@@ -19,7 +19,9 @@
     "test": "cross-env NODE_ENV=test karma start",
     "test:watch": "cross-env NODE_ENV=test npm test -- --watch --no-single-run",
     "postinstall": "npm run build",
-    "keep-green": "git merge master && rm -rf node_modules && npm install && npm start"
+    "keep-green": "git merge master && rm -rf node_modules && npm install && npm start",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Choon Ken Ding",
   "license": "MIT",
@@ -85,7 +87,7 @@
     "express-session": "^1.14.1",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.9.0",
-    "helmet": "^2.1.2",
+    "helmet": "^3.6.1",
     "immutable": "^3.7.6",
     "inline-environment-variables-webpack-plugin": "1.1.0",
     "invariant": "^2.2.1",
@@ -126,6 +128,8 @@
     "warning": "^3.0.0",
     "webpack": "^1.13.2",
     "webpack-dev-middleware": "^1.5.1",
-    "webpack-hot-middleware": "^2.12.2"
-  }
+    "webpack-hot-middleware": "^2.12.2",
+    "snyk": "^1.30.1"
+  },
+  "snyk": true
 }
