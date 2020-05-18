@@ -91,7 +91,7 @@
     "invariant": "^2.2.1",
     "isomorphic-fetch": "^2.2.1",
     "json-loader": "^0.5.4",
-    "kerberos": "0.0.21",
+    "kerberos": "1.0.0",
     "lodash": "^4.16.2",
     "method-override": "^2.3.5",
     "mongoose": "^4.5.10",
